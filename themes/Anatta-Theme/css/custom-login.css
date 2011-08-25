@@ -1,0 +1,32 @@
+html {
+    background: url("../images/falcon.gif") repeat scroll 0 0 #000000;
+}
+h1 a {
+    background: url("../images/stryker.jpg") no-repeat scroll 0 0 transparent;
+    height: 52px;
+    padding: 0 0 5px 10px;
+    width: 278px;
+}
+body.login {
+    border-top-color: #FFFFFF;
+}
+.login p#backtoblog a:link, .login p#backtoblog a:visited {
+    color: #000000;
+}
+.login p#backtoblog a:hover, .login p#backtoblog a:active {
+    color: #000000;
+    text-decoration: underline;
+}
+#loginform {
+    background: none repeat scroll 0 0 #314960;
+}
+label {
+    color: #FFFFFF;
+}
+.login #nav a {
+    color: #FFFFFF !important;
+}
+.login #nav a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
