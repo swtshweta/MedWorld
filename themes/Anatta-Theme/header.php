@@ -106,13 +106,13 @@ function hidedivider(id){
 		}
 		else { 	//if the user is not logged in
 		 ?>
-		<!--Mian-navigation-->
+		<!--Main-navigation-->
         <div class="menu">
         <?php wp_nav_menu( array('menu' => 'Header Top Navigation', 'container' => '','container_class' => '', 'container_id' => '','menu_class'      => '', 'items_wrap'      => '<ul id="navigation">%3$s</ul>' )); ?>
         </div>
         <?php } ?>
         
-		<!--/Mian navigation-->      
+		<!--/Main navigation-->      
   		<div class="logins"><?php echo add_login_logout_link(); ?>
        
         </div>

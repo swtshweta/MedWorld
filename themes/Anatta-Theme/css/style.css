@@ -69,13 +69,15 @@ body{ line-height:normal; background:#000 url(../images/header.gif) top center n
 #header #search-video input.search-btn{ width:61px; height:25px; background:url(../images/search-btn.png); padding:0px; margin-top:8px; float:none; cursor:pointer;}
 
 /* main navigation */
-.menu ul{ list-style:none; font-family:arial; font-size:18px; padding:18px 0px 15px 0px; overflow:hidden; float:left;}
+.menu ul{ list-style:none; font-family:arial; font-size:15px; padding:18px 0px 15px 0px; overflow:hidden; float:left;}
 .menu ul li, .menu ul li a{ float:left;}
 .menu ul li{margin-left: -1px;position: relative;}
 .menu ul li a{ background:url(../images/divider-navigation.gif) right 4px no-repeat; padding:4px 14px 4px 14px;color:#fff; line-height: 14px;font-weight:normal; }
-.menu ul li.current_page_item a, .menu ul li a.divider-hide:hover, .menu ul li a.show-hide:hover, .menu ul li a:hover{ background:#3184d9;} 
+.menu ul li.current_page_item a{background:#3184d9;} 
+.menu ul li.current_page_item a:hover{ color:#fff;} 
+.menu ul li a.divider-hide:hover, .menu ul li a.show-hide:hover, .menu ul li a:hover{color:#3184d9;} 
 .menu ul li a.divider-hide{background:none;}
-.menu ulli a.show-hide{background:url(../images/divider-navigation.gif) right 3px no-repeat;}
+.menu ul li a.show-hide{background:url(../images/divider-navigation.gif) right 3px no-repeat;}
 
 /* content */
 #content{ background:#fff; border-top:1px solid #666666;}
@@ -83,7 +85,7 @@ body{ line-height:normal; background:#000 url(../images/header.gif) top center n
 /* homepage and aboutpage css */
 .home-page { overflow:hidden;}
 
-#content p  {color:#333333; font-size:13px; padding-bottom: 15px; line-height:normal;}
+#content p  {color:#333333; font-size:14px; padding-bottom: 15px; line-height:normal;}
 
 #content .right-column .single-link a{ color:#257de2; font-size:14px; text-decoration:underline;}
 #content .right-column .single-link a:hover{ text-decoration:none;}
@@ -395,3 +397,34 @@ color: #FFFFFF;
 
 .paddings { padding: 23px 0 25px;}
 .padding_logo { padding: 18px 0 15px; float:left;}
+
+/* pagination stylesheet */            
+    .wp-pagenavi { 
+	font-family:Arial, Helvetica, sans-serif;
+	border: 1px solid rgba(0, 0, 0, 0.15); 
+	border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px 3px 3px 3px;
+     -moz-border-radius: 3px 3px 3px 3px;
+     -webkit-border-radius: 3px 3px 3px 3px;
+    clear: right;float: left;height: 36px;margin: 18px;font-weight:normal;font-size:12px;
+}
+
+/* page numbers */        
+.wp-pagenavi a, .wp-pagenavi span {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);color: #0069D6;display: block;float: left;line-height: 36px;padding: 0 14px;text-decoration: none;
+}
+/* total pages  */        
+.wp-pagenavi span.pages{
+    color:#BFBFBF;
+}
+/* active and hover page style  */        
+.wp-pagenavi span.current, .wp-pagenavi a:hover{
+    background: #C7EEFE;
+}
+/* style for last item  */    
+.wp-pagenavi a:last-child, .wp-pagenavi span:last-child {
+    border-right: 0px;
+}

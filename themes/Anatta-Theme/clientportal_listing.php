@@ -192,9 +192,14 @@ altrugon_dropdown_categories($args); ?>
     </div>
     <?php endwhile; ?>
     <div class="clear "></div>
+	<!-- start pagination-->
+	<div class="wp-pagenavi">
     <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } //pagination function?>
+    </div>
+	<!-- end pagination-->	
+	<div class="clear"></div>
     
-    <?php endif; wp_reset_query(); ?>
+	<?php endif; wp_reset_query(); ?>
   </div><!--entries-->
   </div><!--main listing div-->
 </div>
